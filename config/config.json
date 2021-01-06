@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "customer-satisfaction-rating-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/customerSatisfactionRating/CustomerSatisfactionRatingWebPart.js",
+          "manifest": "./src/webparts/customerSatisfactionRating/CustomerSatisfactionRatingWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CustomerSatisfactionRatingWebPartStrings": "lib/webparts/customerSatisfactionRating/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}
